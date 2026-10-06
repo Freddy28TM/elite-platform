@@ -1,0 +1,56 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Sensitive data
+*.key
+*.pem
+*.crt
+.env
+credentials/
+secrets/
+
+# Large files
+*.iso
+*.img
+*.vmdk
+*.qcow2
+
+# Wordlists (too large for git)
+wordlists/
+*.txt
+!requirements.txt
+
+# Evidence
+evidence/
+screenshots/
+reports/
+
+# VM images
+vm-images/
+
+# Malware samples
+samples/malware/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Backup
+backups/
