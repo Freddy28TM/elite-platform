@@ -59,3 +59,14 @@ backups/
 reverse-engineering/analysis/
 reverse-engineering/venv/
 tools/*/venv/
+
+# Cloned external tools (use git clone to get them)
+tools/reverse-engineering/gef/
+tools/reverse-engineering/pwndbg/
+tools/reverse-engineering/peda/
+tools/reverse-engineering/ROPgadget/
+tools/reverse-engineering/rizin/
+tools/reverse-engineering/ghidra-scripts/
+
+# GDB history
+.gdb_history
