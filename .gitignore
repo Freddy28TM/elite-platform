@@ -79,3 +79,4 @@ tools/reverse-engineering/ROPgadget/
 tools/reverse-engineering/rizin/
 tools/reverse-engineering/ghidra-scripts/
 .gdb_history
+reverse-engineering/practice/
