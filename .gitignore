@@ -54,3 +54,8 @@ Thumbs.db
 
 # Backup
 backups/
+
+# Analysis output
+reverse-engineering/analysis/
+reverse-engineering/venv/
+tools/*/venv/
