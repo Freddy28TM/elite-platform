@@ -70,3 +70,12 @@ tools/reverse-engineering/ghidra-scripts/
 
 # GDB history
 .gdb_history
+
+# Cloned external tools
+tools/reverse-engineering/gef/
+tools/reverse-engineering/pwndbg/
+tools/reverse-engineering/peda/
+tools/reverse-engineering/ROPgadget/
+tools/reverse-engineering/rizin/
+tools/reverse-engineering/ghidra-scripts/
+.gdb_history
