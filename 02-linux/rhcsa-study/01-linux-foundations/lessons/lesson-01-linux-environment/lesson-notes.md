@@ -14,7 +14,7 @@
 | 3 | Users & Groups | ✅ |
 | 4 | Processes & State | ✅ |
 | 5 | Security Observations | ✅ |
-| 6 | Permissions Lab | ⏳ |
+| 6 | Permissions Lab | ✅ |
 | 7 | Verification | ⏳ |
 | 8 | Final Review | ⏳ |
 
@@ -138,6 +138,34 @@
 
 ---
 
+
+---
+
+## Part 6 — Permissions Lab
+
+| Command | Purpose |
+|---------|---------|
+| touch | Create files |
+| chmod | Change permissions |
+| chown | Change owner |
+| chgrp | Change group |
+| ls -l | Verify changes |
+
+**Numeric mode:**
+- 644 = rw-r--r-- (standard file)
+- 755 = rwxr-xr-x (executable)
+- 600 = rw------- (private)
+
+**Symbolic mode:**
+- u+x = add execute for user
+- g-w = remove write for group
+- o=r = set read for others
+
+**Three classes:** User (u) | Group (g) | Others (o)
+**Three permissions:** read (4) | write (2) | execute (1)
+
+---
+
 ## Scripts Built
 
 | Script | Purpose |
@@ -148,6 +176,7 @@
 | rhcsa-users-lab.sh | Full users lab |
 | rhcsa-processes-lab.sh | Full processes lab |
 | rhcsa-security-lab.sh | Security observations |
+| rhcsa-permissions-lab.sh | Full permissions lab |
 
 ---
 
