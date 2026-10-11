@@ -13,7 +13,7 @@
 | 2 | Filesystem Exploration | ✅ |
 | 3 | Users & Groups | ✅ |
 | 4 | Processes & State | ✅ |
-| 5 | Security Observations | ⏳ |
+| 5 | Security Observations | ✅ |
 | 6 | Permissions Lab | ⏳ |
 | 7 | Verification | ⏳ |
 | 8 | Final Review | ⏳ |
@@ -114,6 +114,30 @@
 
 ---
 
+
+---
+
+## Part 5 — Security Observations
+
+| # | Observation | Command | Security Meaning |
+|---|-------------|---------|------------------|
+| 1 | Shadow file | ls -la /etc/shadow | Password hashes protected |
+| 2 | Sticky bit | ls -ld /tmp | Shared but safe |
+| 3 | Restricted dirs | ls -ld /lost+found | Root-only access |
+| 4 | SUID files | find -perm -4000 | Privilege escalation risk |
+| 5 | World-writable | find -perm -002 | Unexpected write access |
+| 6 | Listening services | ss -tlnp | Attack surface |
+
+**Key findings:**
+- /etc/shadow: root:shadow, restricted
+- /tmp: sticky bit protects shared files
+- /lost+found: root only
+- 10 SUID files found (normal)
+- No world-writable files (clean)
+- 4 listening services (all localhost)
+
+---
+
 ## Scripts Built
 
 | Script | Purpose |
@@ -123,6 +147,7 @@
 | user-info.sh | User info |
 | rhcsa-users-lab.sh | Full users lab |
 | rhcsa-processes-lab.sh | Full processes lab |
+| rhcsa-security-lab.sh | Security observations |
 
 ---
 
