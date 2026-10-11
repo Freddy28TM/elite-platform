@@ -11,7 +11,7 @@
 |------|-------|--------|
 | 1 | Shell Basics | ✅ |
 | 2 | echo Command | ✅ |
-| 3 | cat Command | ⏳ |
+| 3 | cat Command | ✅ |
 | 4 | less Command | ⏳ |
 | 5 | grep Command | ⏳ |
 | 6 | find Command | ⏳ |
