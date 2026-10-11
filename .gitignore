@@ -81,3 +81,12 @@ tools/reverse-engineering/ghidra-scripts/
 .gdb_history
 reverse-engineering/practice/
 reverse-engineering/practice/
+
+# Embedded tools (use git clone to reinstall)
+tools/bugbounty/assetfinder/
+tools/bugbounty/ffuf/
+tools/bugbounty/gau/
+tools/bugbounty/httpx/
+tools/bugbounty/nuclei/
+tools/bugbounty/subfinder/
+tools/bugbounty/waybackurls/
