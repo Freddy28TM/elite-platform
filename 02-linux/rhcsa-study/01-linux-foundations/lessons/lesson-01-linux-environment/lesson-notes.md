@@ -1,51 +1,100 @@
-# Lesson 01 — Linux Environment Notes
+# Lesson 01 — Linux Environment
 
-**Date Started:** 2026-10-11
-**Date Completed:** 
+**Started:** 2026-10-11
+**Status:** In Progress
 
-## Commands Mastered
+---
 
-| # | Command | Purpose | Practiced |
-|---|---------|---------|-----------|
-| 1 | whoami | Show current user | ✅ |
-| 2 | pwd | Show current directory | ✅ |
-| 3 | hostname | Show machine name | ✅ |
-| 4 | cat /etc/os-release | Show distribution | ✅ |
-| 5 | uname -r | Show kernel release | ✅ |
-| 6 | uname -a | Show all system info | ✅ |
-| 7 | uname -m | Show architecture | ✅ |
+## Parts
 
-## My System Profile
+| Part | Topic | Status |
+|------|-------|--------|
+| 1 | Linux Environment | ✅ |
+| 2 | Filesystem Exploration | ✅ |
+| 3 | Users & Groups | ✅ |
+| 4 | Processes & State | ⏳ |
+| 5 | Security Observations | ⏳ |
+| 6 | Permissions Lab | ⏳ |
+| 7 | Verification | ⏳ |
+| 8 | Final Review | ⏳ |
 
-- **User:** fredrick
-- **Hostname:** parrot
-- **Distribution:** Parrot Security 7.4 (echo)
-- **Debian Version:** 13.6
-- **Kernel:** 7.1.13+parrot7-amd64
-- **Architecture:** x86_64
+---
 
-## What I Built
+## Part 1 — System Identification
 
-**system-report.sh** — A script that combines all 7 commands into one formatted report.
+| Command | Purpose |
+|---------|---------|
+| whoami | Show current user |
+| pwd | Show current directory |
+| hostname | Show machine name |
+| cat /etc/os-release | Show distribution |
+| uname -r | Show kernel |
+| uname -a | Show all system info |
+| uname -m | Show architecture |
 
-Located at: `commands/system-report.sh`
+**System profile:**
+- User: fredrick
+- Host: parrot
+- OS: Parrot Security 7.4
+- Kernel: 7.1.13+parrot7-amd64
+- Arch: x86_64
 
-## Key Concepts
+---
 
-1. **Identify first, change second** — Always know the system before modifying.
-2. **User identity matters** — whoami tells you your permissions context.
-3. **Paths matter** — Absolute paths start from `/`, relative from current dir.
-4. **Distribution ≠ Kernel** — Different pieces of information.
-5. **Architecture matters** — Software must match (x86_64, ARM, etc).
+## Part 2 — Filesystem
 
-## Challenges
+| Directory | Purpose |
+|-----------|---------|
+| / | Root |
+| /home | User homes |
+| /etc | Config |
+| /usr | Programs |
+| /var | Variable data |
+| /tmp | Temporary (sticky bit) |
+| /proc | Process info |
+| /sys | Device info |
+| /boot | Boot files |
 
-- Remembering the difference between `uname -r` (kernel) and `uname -m` (architecture).
-- Understanding absolute vs relative paths.
+**Key concepts:**
+- `/` and `/root` are different
+- `/tmp` has sticky bit: `drwxrwxrwt`
+- `/lost+found` is restricted: `drwx------`
+- Symlinks: `/bin` → `/usr/bin`
 
-## Summary
+---
 
-Lesson 01 teaches system identification. These 7 commands form the foundation for all Linux administration work. Before any task, identify the system.
+## Part 3 — Users & Groups
 
-**Part 1 of Lesson 01 is complete. Parts 2-8 remain.**
+**RHCSA Essential Commands:**
 
+| Command | Purpose |
+|---------|---------|
+| whoami | Current user |
+| id | UID, GID, groups |
+| useradd | Create user |
+| usermod | Modify user |
+| userdel | Delete user |
+| passwd | Set/lock password |
+| groupadd | Create group |
+| groups | Show user groups |
+| sudo | Run as root |
+
+**User files:**
+- `/etc/passwd` — Users
+- `/etc/group` — Groups
+- `/etc/shadow` — Passwords (root only)
+
+---
+
+## Scripts Built
+
+| Script | Purpose |
+|--------|---------|
+| system-report.sh | System info |
+| filesystem-tour.sh | Directory overview |
+| user-info.sh | User info |
+| rhcsa-users-lab.sh | Full users lab |
+
+---
+
+**Next:** Part 4 — Processes
