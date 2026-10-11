@@ -153,7 +153,7 @@ MIT - See LICENSE
 
 Short-term (this month):
 - Complete RHCSA study materials
-- Finish Ollama model download
+- Complete RHCSA study materials
 - Set up multi-agent AI lab
 
 Mid-term (3 months):

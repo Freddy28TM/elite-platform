@@ -39,7 +39,6 @@ The blueprint of the Elite Cybersecurity Platform.
 
 | Folder | Purpose |
 |--------|---------|
-| ai/ | AI models, agents, scripts |
 | cybersecurity/ | All security work |
 | development/ | Programming projects |
 | digital-products/ | Product development |
@@ -179,7 +178,6 @@ Lightweight services for learning and testing.
 | Suricata | IDS | docker run -d jasonish/suricata |
 | DVWA | Web target | docker run -d vulnerables/web-dvwa |
 | Juice Shop | Modern target | docker run -d bkimminich/juice-shop |
-| Ollama | AI (if not native) | docker run -d ollama/ollama |
 | Portainer | Docker GUI | docker run -d portainer/portainer-ce |
 
 ### Storage
@@ -275,12 +273,10 @@ docker exec -it <container> bash
 
 - CI/CD for tooling
 - Automated recon
-- AI agents for research
 - Custom tooling
 
 ### Phase 5 - Scale
 
-- External GPU (AI acceleration)
 - Network hardware (routers, switches)
 - Physical lab expansion
 - Community contributions
@@ -338,7 +334,6 @@ System      All work       |
 
 | Feature | Purpose | Timeline |
 |---------|---------|----------|
-| External GPU | Faster AI inference | When budget allows |
 | External SSD | More VM storage | When needed |
 | Raspberry Pi cluster | Network lab | When ready |
 | Cloud lab (AWS) | Cloud security | After OSCP |
@@ -352,11 +347,8 @@ System      All work       |
 | Task | Command |
 |------|---------|
 | Navigate to security | cd ~/cybersecurity |
-| Navigate to AI | cd ~/ai |
 | Check disk | df -h |
 | Check space | du -sh /data/* |
-| Start Ollama | ollama serve |
-| Check Ollama | curl localhost:11434/api/tags |
 | Docker status | docker ps |
 | Git status | cd ~/cybersecurity/elite-platform && git status |
 
