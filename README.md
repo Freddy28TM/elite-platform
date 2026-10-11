@@ -33,7 +33,7 @@ Primary focus: **RHCSA to OSCP**
 | 2 | OSCP | Offensive security |
 | 3 | Specialized | Blue team, cloud, mobile |
 
-Full roadmaps in docs/.
+Full roadmaps in 01-docs/.
 
 ---
 
@@ -60,6 +60,36 @@ Home (~) contains only symlinks to /data.
 
 ---
 
+## Lab Structure (Learning Order)
+
+The repository is numbered by learning priority:
+
+elite-platform/
+├── 00-progress/ Track daily/weekly progress
+├── 01-docs/ Roadmaps and guides
+├── 02-linux/ RHCSA + Linux fundamentals
+├── 03-networking/ Network fundamentals
+├── 04-bug-bounty/ Bug bounty platform (main goal)
+├── 05-reverse-engineering/ Binary analysis, exploit dev
+├── 06-red-team/ Advanced offensive operations
+├── 07-blue-team/ Detection, IR, forensics
+├── 08-grc/ Governance, risk, compliance
+├── 09-infrastructure/ Lab infrastructure
+├── 10-tools/ External tools
+├── 11-scripts/ Automation scripts
+├── 12-templates/ Report templates
+├── 13-configs/ Configuration files
+├── 14-documentation/ General documentation
+└── 15-logs/ Activity logs
+text
+
+
+**Learning order:** 02 → 03 → 04 → 05 → 06 → 07 → 08
+
+**Supporting folders:** 00, 01, 09-15
+
+---
+
 ## Domain Breakdown
 
 | Domain | Purpose | Key Tools |
@@ -78,15 +108,19 @@ Home (~) contains only symlinks to /data.
 
 | File | Purpose |
 |------|---------|
-| docs/00-architecture.md | Complete lab design |
-| docs/01-linux-administrator.md | RHCSA path + essential commands |
-| docs/02-blue-team-certs.md | Blue team roadmap |
-| docs/03-red-team-certs.md | OSCP and beyond |
-| docs/04-tool-inventory.md | Every tool documented |
-| docs/05-workflow.md | Daily/weekly usage |
-| docs/06-setup-from-scratch.md | Reproduce this lab |
-| docs/07-resources.md | Books, courses, labs |
-| docs/08-specialized-domains.md | Cloud, Mobile, OSINT, Drone, WiFi, Forensics |
+| 01-docs/00-architecture.md | Complete lab design |
+| 01-docs/01-linux-administrator.md | RHCSA path + essential commands |
+| 01-docs/02-blue-team-certs.md | Blue team roadmap |
+| 01-docs/03-red-team-certs.md | OSCP and beyond |
+| 01-docs/04-tool-inventory.md | Every tool documented |
+| 01-docs/05-workflow.md | Daily/weekly usage |
+| 01-docs/06-setup-from-scratch.md | Reproduce this lab |
+| 01-docs/07-resources.md | Books, courses, labs |
+| 01-docs/08-specialized-domains.md | Cloud, Mobile, OSINT, Drone, WiFi, Forensics |
+| 02-linux/linux-study/ | Linux fundamentals (structured course) |
+| 02-linux/rhcsa-study/ | Complete RHCSA course (18 modules) |
+| 02-linux/linux-study/ | Linux fundamentals (structured course) |
+| 02-linux/rhcsa-study/ | Complete RHCSA course (18 modules) |
 
 ---
 
@@ -115,8 +149,8 @@ Everything else learned on-demand.
 git clone https://github.com/Freddy28TM/elite-platform.git
 cd elite-platform
 ./setup.sh
-cat docs/00-architecture.md
-cat docs/01-linux-administrator.md
+cat 01-docs/00-architecture.md
+cat 01-docs/01-linux-administrator.md
 
 ---
 
