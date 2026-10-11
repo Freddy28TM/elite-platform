@@ -90,3 +90,20 @@ tools/bugbounty/httpx/
 tools/bugbounty/nuclei/
 tools/bugbounty/subfinder/
 tools/bugbounty/waybackurls/
+
+# Embedded repos (new paths after reorganization)
+05-reverse-engineering/practice/ctf/ctf-challenges/
+05-reverse-engineering/practice/ctf/ctf-tools/
+10-tools/bugbounty/assetfinder/
+10-tools/bugbounty/ffuf/
+10-tools/bugbounty/gau/
+10-tools/bugbounty/httpx/
+10-tools/bugbounty/nuclei/
+10-tools/bugbounty/subfinder/
+10-tools/bugbounty/waybackurls/
+10-tools/reverse-engineering/ROPgadget/
+10-tools/reverse-engineering/gef/
+10-tools/reverse-engineering/ghidra-scripts/
+10-tools/reverse-engineering/peda/
+10-tools/reverse-engineering/pwndbg/
+10-tools/reverse-engineering/rizin/
