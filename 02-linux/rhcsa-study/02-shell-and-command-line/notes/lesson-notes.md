@@ -15,7 +15,7 @@
 | 4 | less Command | ✅ |
 | 5 | grep Command | ✅ |
 | 6 | find Command | ✅ |
-| 7 | Pipes and Redirection | ⏳ |
+| 7 | Pipes and Redirection | ✅ |
 | 8 | Final Review | ⏳ |
 
 ---
