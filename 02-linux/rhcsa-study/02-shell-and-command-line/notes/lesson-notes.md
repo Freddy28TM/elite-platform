@@ -1,7 +1,7 @@
 # Lesson 02 — Shell and Command Line Notes
 
 **Started:** 2026-10-11
-**Status:** In Progress
+**Status:** ✅ COMPLETE
 
 ---
 
@@ -16,7 +16,7 @@
 | 5 | grep Command | ✅ |
 | 6 | find Command | ✅ |
 | 7 | Pipes and Redirection | ✅ |
-| 8 | Final Review | ⏳ |
+| 8 | Final Review | ✅ |
 
 ---
 
