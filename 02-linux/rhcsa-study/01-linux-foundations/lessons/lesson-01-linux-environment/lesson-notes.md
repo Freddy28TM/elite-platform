@@ -12,7 +12,7 @@
 | 1 | Linux Environment | ✅ |
 | 2 | Filesystem Exploration | ✅ |
 | 3 | Users & Groups | ✅ |
-| 4 | Processes & State | ⏳ |
+| 4 | Processes & State | ✅ |
 | 5 | Security Observations | ⏳ |
 | 6 | Permissions Lab | ⏳ |
 | 7 | Verification | ⏳ |
@@ -86,6 +86,34 @@
 
 ---
 
+
+---
+
+## Part 4 — Processes
+
+**RHCSA Essential Commands:**
+
+| Command | Purpose |
+|---------|---------|
+| ps aux | List all processes |
+| top -bn1 | Live process view (batch) |
+| pgrep | Find PID by name |
+| kill | Kill process by PID |
+| systemctl | Manage services |
+| journalctl | View logs |
+
+**Key observations:**
+- 351 processes running
+- PID 1 = /sbin/init (systemd)
+- Load average: 0.45 (idle system)
+- Memory: 11 GB used, 778 MB free
+- Top process: ollama (8.3% CPU)
+
+**Running services:**
+- docker, containerd, cron, dbus, bluetooth, fwupd
+
+---
+
 ## Scripts Built
 
 | Script | Purpose |
@@ -94,6 +122,7 @@
 | filesystem-tour.sh | Directory overview |
 | user-info.sh | User info |
 | rhcsa-users-lab.sh | Full users lab |
+| rhcsa-processes-lab.sh | Full processes lab |
 
 ---
 
