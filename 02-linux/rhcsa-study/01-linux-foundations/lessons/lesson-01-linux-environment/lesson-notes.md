@@ -1,7 +1,7 @@
 # Lesson 01 — Linux Environment
 
 **Started:** 2026-10-11
-**Status:** In Progress
+**Status:** ✅ COMPLETE
 
 ---
 
@@ -15,8 +15,8 @@
 | 4 | Processes & State | ✅ |
 | 5 | Security Observations | ✅ |
 | 6 | Permissions Lab | ✅ |
-| 7 | Verification | ⏳ |
-| 8 | Final Review | ⏳ |
+| 7 | Verification | ✅ |
+| 8 | Final Review | ✅ |
 
 ---
 
