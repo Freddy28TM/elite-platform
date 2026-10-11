@@ -146,6 +146,49 @@ OSCP is hands-on. You learn by doing, not memorizing. This guide shows the minim
 
 ---
 
+
+---
+
+## Phase 8 — Cryptography Attacks
+
+**Essential tools: 5**
+
+| Tool | Purpose | Example |
+|------|---------|---------|
+| hashcat | Hash cracking (GPU) | hashcat -m 1000 hash.txt rockyou.txt |
+| john | Hash cracking (CPU) | john --wordlist=rockyou.txt hash.txt |
+| hydra | Password attacks | hydra -l admin -P pass.txt ssh://target |
+| jwt-tool | JWT analysis | jwt_tool token.txt |
+| openssl | Crypto analysis | openssl s_client -connect target:443 |
+
+**When to use:**
+- After finding password hashes
+- After capturing auth tokens
+- When testing JWT implementations
+- When analyzing TLS
+
+### Common Hash Types
+
+| Hash | Mode (hashcat) | Example |
+|------|---------------|---------|
+| MD5 | 0 | 5f4dcc3b5aa765d61d8327deb882cf99 |
+| SHA1 | 100 | 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8 |
+| SHA256 | 1400 | 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8 |
+| bcrypt | 3200 | $2a$10$... |
+| NTLM | 1000 | 8846f7eaee8fb117ad06bdd830b7586c |
+
+### JWT Attacks
+
+| Attack | Tool | Purpose |
+|--------|------|---------|
+| None algorithm | jwt-tool | Bypass signature |
+| Weak secret | hashcat | Crack HMAC |
+| Key confusion | jwt-tool | RS256 → HS256 |
+| kid injection | Manual | Path traversal |
+
+**Practice:**
+Crack a bcrypt hash from /etc/shadow. Decode a JWT and test None algorithm. Crack a weak JWT HMAC secret.
+
 ## Essential Commands (Cheat Sheet)
 
 **File transfer:**

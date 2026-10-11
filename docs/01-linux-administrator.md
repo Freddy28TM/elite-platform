@@ -184,6 +184,31 @@ Schedule a cron job that writes time to /tmp/cron-test.txt every minute.
 
 ---
 
+
+---
+
+## Topic 11 — Cryptography in Linux
+
+**6 commands.**
+
+| # | Command | Purpose | Example |
+|---|---------|---------|---------|
+| 1 | md5sum | MD5 hash | md5sum file.txt |
+| 2 | sha256sum | SHA-256 hash | sha256sum file.txt |
+| 3 | ssh-keygen | Generate SSH key | ssh-keygen -t ed25519 |
+| 4 | openssl | Crypto toolkit | openssl enc -aes-256-cbc |
+| 5 | gpg | Encryption/signing | gpg --gen-key |
+| 6 | base64 | Encoding | base64 file.txt |
+
+**When to use:**
+- Verify file integrity (sha256sum)
+- Generate SSH keys for servers
+- Sign commits and emails (gpg)
+- Encrypt/decrypt files (openssl, gpg)
+
+**Practice:**
+Generate a SHA-256 hash of a file, verify it after transfer. Generate an SSH key pair, copy public key to a server. Encrypt a text file with openssl.
+
 ## Daily 10-Minute Practice
 
 Day 1-2: Navigation, Users, Permissions

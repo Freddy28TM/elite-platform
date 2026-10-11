@@ -114,6 +114,21 @@ Each tool has:
 
 ---
 
+## Category 9 — Cryptography (6 tools)
+
+| Tool | Purpose | Example |
+|------|---------|---------|
+| openssl | Crypto toolkit | openssl s_client -connect target:443 |
+| gpg | Encryption/signing | gpg --encrypt file.txt |
+| hashcat | Hash cracking | hashcat -m 1000 hash.txt rockyou.txt |
+| john | Hash cracking | john --wordlist=rockyou.txt hash.txt |
+| ssh-keygen | SSH keys | ssh-keygen -t ed25519 |
+| testssl.sh | TLS scanning | testssl.sh target.com |
+
+**When to use:** Verifying integrity, cracking hashes, TLS analysis, SSH auth.
+
+---
+
 ## Category 8 — Language Environments (5 tools)
 
 | Tool | Purpose | Example |
@@ -243,7 +258,7 @@ git push
 | Forensics | 4 |
 | Utility | 5 |
 | Languages | 5 |
-| **Total** | **40** |
+| **Total** | **46** |
 
 ---
 

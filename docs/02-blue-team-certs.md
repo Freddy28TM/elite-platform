@@ -158,6 +158,50 @@ Blue team is about detection, response, and defense. This guide shows the minimu
 
 ---
 
+
+---
+
+## Phase 8 — TLS and Certificate Analysis
+
+**Essential tools: 4**
+
+| Tool | Purpose | Example |
+|------|---------|---------|
+| openssl | TLS inspection | openssl s_client -connect target:443 |
+| sslyze | TLS scanner | sslyze target.com |
+| testssl.sh | TLS tester | testssl.sh target.com |
+| nmap ssl-enum-ciphers | TLS scan | nmap --script ssl-enum-ciphers -p 443 target |
+
+**When to use:**
+- Auditing web servers
+- Detecting weak TLS versions
+- Checking certificate validity
+- Analyzing cipher suites
+
+### Weak TLS Configurations to Flag
+
+| Configuration | Risk |
+|--------------|------|
+| SSLv2, SSLv3 | Critical — broken |
+| TLS 1.0, 1.1 | High — deprecated |
+| RC4 cipher | High — broken |
+| NULL cipher | Critical |
+| Self-signed cert | Medium |
+| Expired cert | High |
+| Weak key (<2048-bit RSA) | High |
+| SHA-1 signature | High — deprecated |
+
+### Certificate Inspection Commands
+
+| Command | Purpose |
+|---------|---------|
+| openssl s_client -connect host:443 -showcerts | View full chain |
+| openssl x509 -in cert.pem -text -noout | Read certificate |
+| openssl s_client -connect host:443 -tls1_2 | Force TLS 1.2 |
+
+**Practice:**
+Run testssl.sh against a known server. Identify weak ciphers. Check certificate chain validity. Document findings.
+
 ## Essential Commands Cheat Sheet
 
 **Log analysis:**
