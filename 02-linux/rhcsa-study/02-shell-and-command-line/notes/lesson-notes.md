@@ -14,7 +14,7 @@
 | 3 | cat Command | ✅ |
 | 4 | less Command | ✅ |
 | 5 | grep Command | ✅ |
-| 6 | find Command | ⏳ |
+| 6 | find Command | ✅ |
 | 7 | Pipes and Redirection | ⏳ |
 | 8 | Final Review | ⏳ |
 
